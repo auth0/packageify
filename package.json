@@ -13,5 +13,8 @@
     "package.json"
   ],
   "author": "Jose F. Romaniello <jfromaniello@gmail.com> (http://joseoncode.com)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "through": "^2.3.4"
+  }
 }
