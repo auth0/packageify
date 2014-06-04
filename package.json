@@ -1,6 +1,6 @@
 {
   "name": "packageify",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "inline things like \"require('package.version')\". Do not include all the package.json in your bundles.",
   "main": "index.js",
   "scripts": {
