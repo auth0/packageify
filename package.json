@@ -1,0 +1,17 @@
+{
+  "name": "packageify",
+  "version": "0.0.0",
+  "description": "inline things like \"require('package.version')\". Do not include all the package.json in your bundles.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "homepage": "https://github.com/jfromaniello/versionify",
+  "keywords": [
+    "browserify",
+    "browserify-transform",
+    "package.json"
+  ],
+  "author": "Jose F. Romaniello <jfromaniello@gmail.com> (http://joseoncode.com)",
+  "license": "MIT"
+}
