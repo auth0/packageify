@@ -9,7 +9,7 @@ require('./package.json');
 this is often an overkill since it will include all the package.json file and most of the time you only need things like the `version` property:
 
 ```
-exports.version = require('./package.json');
+exports.version = require('./package.json').version;
 ```
 
 With this transforms you can use:
