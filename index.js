@@ -11,7 +11,7 @@ function getPackageJson (inDir) {
 
 module.exports = function (file, opts) {
   return through(function write(data) {
-    data = data.toString().replace(/require\((\'|\")package\.(.*)(\'|\")\)/ig, function (str, p1, p2) {
+    data = data.toString().replace(/require\((\'|\")package\.(.*?)(\'|\")\)/ig, function (str, p1, p2) {
       var r = JSON.stringify(require(getPackageJson(file))[p2]);
       return r;
     });
