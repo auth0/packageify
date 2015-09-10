@@ -7,6 +7,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "nested": {
+    "prop": "A nested property"
+  },
   "author": "Example Person",
   "license": "ISC"
 }

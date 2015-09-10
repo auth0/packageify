@@ -33,3 +33,18 @@ test('Allows for chaining off of a require by non greedily matching "package.x" 
         "var author = require('package.author');"
     ].join('\n'))
 });
+
+test('Handles nested paths ("package.x.x")', function(t) {
+  var buffer = '';
+  var testFilePath = __filename;
+
+  packageify(testFilePath)
+    .on('data', function(d) { buffer += d })
+    .on('end', function() {
+      t.ok(buffer === 'var nested = "A nested property";');
+      t.end()
+    })
+    .end([
+        "var nested = require('package.nested.prop');",
+    ].join('\n'))
+});

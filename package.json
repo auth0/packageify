@@ -19,6 +19,7 @@
   "author": "Jose F. Romaniello <jfromaniello@gmail.com> (http://joseoncode.com)",
   "license": "MIT",
   "dependencies": {
+    "lodash.get": "^3.7.0",
     "through": "^2.3.4"
   },
   "devDependencies": {
