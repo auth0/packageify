@@ -1,3 +1,5 @@
+[![Build Status](http://img.shields.io/travis/auth0/packageify.svg?style=flat&branch=master)](https://travis-ci.org/auth0/packageify)
+
 Inline things from your package.json without including all the package.json.
 
 You can require `package.json` with browserify since it is a JSON as follows:
