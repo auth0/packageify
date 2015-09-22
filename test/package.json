@@ -1,0 +1,12 @@
+{
+  "name": "test-package-json",
+  "private": true,
+  "version": "1.0.3",
+  "description": "",
+  "main": "index.test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Example Person",
+  "license": "ISC"
+}
