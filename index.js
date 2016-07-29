@@ -1,4 +1,5 @@
 var through = require('through');
+var getProperty = require('lodash.get');
 var path = require('path');
 var fs = require('fs');
 
@@ -11,9 +12,10 @@ function getPackageJson (inDir) {
 
 module.exports = function (file, opts) {
   return through(function write(data) {
-    data = data.toString().replace(/require\((\'|\")package\.(.*?)(\'|\")\)/ig, function (str, p1, p2) {
-      var r = JSON.stringify(require(getPackageJson(file))[p2]);
-      return r;
+    data = data.toString().replace(/require\((\'|\")package\.(.*?)(\'|\")\)/ig, function (str, p1, propertyPath) {
+      var package = require(getPackageJson(file));
+      var property = getProperty(package, propertyPath);
+      return JSON.stringify(property);
     });
 
     this.emit('data', data);
