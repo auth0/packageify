@@ -10,7 +10,7 @@
     "type": "git",
     "url": "https://github.com/auth0/packageify"
   },
-  "homepage": "https://github.com/jfromaniello/packageify",
+  "homepage": "https://github.com/auth0/packageify",
   "keywords": [
     "browserify",
     "browserify-transform",
